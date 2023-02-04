@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-pratico</title>
+</head>
+
+<body>
+    <h1>O aluno deverá criar um programa para informar a soma de todos os 
+    múltiplos de 3 ou 5 menores que determinado número.</h1>
+    <!-- <p>A soma de todos os múltiplos de 3  menores que 10 é " + totalsoma;
+    </p>-->
+    <script>
+        /* 1º O aluno deverá criar um programa para informar a soma de todos os múltiplos 
+de 3 ou 5 menores que determinado número.*/
+
+/* 2º 
+*/
+var multiplos3 = [];
+var mult3 = 0;
+var mult = 1;
+var totalsoma = 0;
+
+function Multi (numberChooser)
+{
+    for (let i = 0; i < numberChooser; i++) 
+    {
+       if (i % 3 == 0 || i % 5 == 0)
+       {        
+        multiplos3.push(i);           
+       }
+        
+    }
+
+    for (let j = 0; j < multiplos3.length; j++) 
+    {     
+        totalsoma = multiplos3[j] + totalsoma;   
+    }
+    console.log(totalsoma);
+}
+
+/*function somandoMultiplos(valorEscolhido)
+{
+    var x = valorEscolhido;
+    while (mult3 < valorEscolhido)
+    {               
+        mult3 = 5 * mult;
+        if (mult3 < x) 
+        {
+            multiplos3.push(mult3);
+        }        
+        mult ++;
+    }
+
+    for (let i = 0; i < multiplos3.length; i++) 
+    {     
+        totalsoma = multiplos3[i] + totalsoma;   
+    }
+    console.log(totalsoma);
+        
+}*/
+
+
+//document.write("A soma de todos os múltiplos de 3  menores que 10 é " + totalsoma);
+
+    </script>
+</body>
+</html>
