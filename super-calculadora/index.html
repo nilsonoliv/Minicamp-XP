@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Super Calculadora</title>
+  </head>
+  
+  <body>
+    <header>
+      <h1>Super Calculadora</h1>
+    </header>
+
+    <main>
+      <p class="inputs">
+        <label for="numberA">Primeiro número (A)</label>
+        <input id="numberA" type="number">
+  
+        <label for="numberB">Segundo número (B)</label>
+        <input id="numberB" type="number">
+  
+        <button>Calcular</button>
+      </p>
+      <section>
+
+        <!--1ª COLUNA-->
+        <div class="col">
+          <div class="quadro">
+            <p>Soma</p>
+            <p id="soma"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Multiplicação</p>
+            <p id="multiplicacao"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Potência de A na base B</p>
+            <p id="potenciaA-na-Base-B"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Raíz quadrada de B</p>
+            <p id="raizQuadradaB"><span>0</span></p>
+          </div>
+          
+          <div class="quadro">
+            <p>Porcentagem de A em relação a B</p>
+            <p id="porcentagemA-em-B"><span>0</span></p>
+          </div>
+
+        </div>
+
+        <!--2ª coluna-->
+        <div class="col">
+          <div class="quadro">
+            <p>Subtração A - B</p>
+            <p id="subtracaoA-B"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Divisão A / B</p>
+            <p id="divisaoA/B"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Potência de B na base A</p>
+            <p id="potenciaB-na-baseA"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Fatorial de A</p>
+            <p id="fatorialA"><span>0</span></p>
+          </div>
+          
+          <div class="quadro">
+            <p>Porcentagem de B em relação a A</p>
+            <p id="porcentagemB-em-A"><span>0</span></p>
+          </div>
+
+        </div>
+
+        <!--3ª COLUNA-->
+        <div class="col">
+          <div class="quadro">
+            <p>Subtração B - A</p>
+            <p id="subtracaoB-A"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Divisão B / A</p>
+            <p id="divisaoB/A"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Raíz quadrada de A</p>
+            <p id="raizQuadradaA"><span>0</span></p>
+          </div>
+
+          <div class="quadro">
+            <p>Fatorial de B</p>
+            <p id="fatorialB"><span>0</span></p>
+          </div>
+          
+          <div class="quadro">
+            <p>Média</p>
+            <p id="media"><span>0</span></p>
+          </div>
+
+        </div>
+    </section>
+    </main>
+    
+    <script defer src="./js/script.js"></script>
+
+  </body>
+</html>
