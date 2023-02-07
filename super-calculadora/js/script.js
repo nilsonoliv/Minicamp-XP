@@ -58,13 +58,56 @@ function potenciadeBnaBaseA(numeroA, numeroB)
 
 function fatorialA(numeroA) 
 {
-    var valoresDeA = []
-    for (let i = 0; i < numeroA; i++) 
+    var calcFatorialA = 1;
+    for (let i = 1; i <= numeroA; i++) 
     {
-        
+       calcFatorialA = calcFatorialA * i;
     }
-    var calcFatorialA = numeroA;
-    return calcFatorialA;    
+           
+    return calcFatorialA;  
 }
 
+function porcentagemdeBemRelacaoA(numeroA, numeroB) 
+{
+    var nB = numeroB*100;
+    var nA = numeroA/100;
+    var calcPorcentagemBemA = nB / nA;
+    calcPorcentagemBemA = calcPorcentagemBemA / 100;
+    //return calcPorcentagemBemA;  
+    console.log(calcPorcentagemBemA);  
+}
 
+function subtracaoBMenosA(numeroA, numeroB) 
+{
+    var BmenosA = numeroB - numeroA;
+    return BmenosA;    
+}
+
+function divisaoBporA(numeroA, numeroB) 
+{
+    var calcDividaBporA = numeroB / numeroA;
+    return calcDividaBporA;    
+}
+
+function raizQuadradaA(numeroA) 
+{
+    var calcRaizQuadradaA = Math.sqrt(numeroA);
+    return calcRaizQuadradaA;    
+}
+
+function fatorialB(numeroB) 
+{
+    var calcFatorialB = 1;
+    for (let i = 1; i <= numeroB; i++) 
+    {
+       calcFatorialB = calcFatorialB * i;
+    }
+           
+    return calcFatorialB;  
+}
+
+function media(numeroA, numeroB) 
+{
+    var media = (numeroA + numeroB) / 2;
+    return media;    
+}
