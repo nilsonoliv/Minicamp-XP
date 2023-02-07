@@ -59,11 +59,16 @@ function potenciadeBnaBaseA(numeroA, numeroB)
 function fatorialA(numeroA) 
 {
     var calcFatorialA = 1;
-    for (let i = 1; i <= numeroA; i++) 
+    if(numeroA == 0)
     {
-       calcFatorialA = calcFatorialA * i;
-    }
-           
+        return calcFatorialA = 1;
+    }else
+    {
+        for (let i = 1; i <= numeroA; i++) 
+        {
+        calcFatorialA = calcFatorialA * i;
+        }
+    }   
     return calcFatorialA;  
 }
 
@@ -98,11 +103,16 @@ function raizQuadradaA(numeroA)
 function fatorialB(numeroB) 
 {
     var calcFatorialB = 1;
-    for (let i = 1; i <= numeroB; i++) 
+    if(calcFatorialB == 0)
     {
-       calcFatorialB = calcFatorialB * i;
-    }
-           
+        return calcFatorialB = 1;
+    } else
+    {
+        for (let i = 1; i <= numeroB; i++) 
+        {
+        calcFatorialB = calcFatorialB * i;
+        }
+    }           
     return calcFatorialB;  
 }
 
